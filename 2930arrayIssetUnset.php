@@ -30,7 +30,4 @@ echo "</br>";
 unset($staedte); // löscht gesamtes array;
 var_dump(isset($staedte));
 
-
-
-
  ?>
