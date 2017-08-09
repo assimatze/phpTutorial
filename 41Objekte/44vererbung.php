@@ -7,8 +7,8 @@ class Car{
     }
     //eigenschaft
     //veränderung damit kindsklasse auf $ps zugreifen kann
-    private $ps;
-    //protected $ps;
+    //private $ps;
+    protected $ps;
 
     //methode
     public function getPs(){
