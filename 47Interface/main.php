@@ -3,9 +3,6 @@
 // require "src/Car.php";
 // require "src/SuperCar.php";
 
-//require wird nicht benötigt stattdessen verwenden wir einen Autoloader!!!
-//-------------------------------------------------------------------------
-// Version 2 vom Autoloader mit "anonymer Function"
 spl_autoload_register(function ($className){
     //var_dump($className);
     //bindedie Datei ein Falls sie existiert
@@ -15,7 +12,7 @@ spl_autoload_register(function ($className){
 });
 //Typisierter Functions Aufruf
 // mit Car geht sowohl Car als SuperCar
-function drive($car){
+function drive(DriverInterface $car){
     return $car->drive();
 }
 
